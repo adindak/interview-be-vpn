@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package payment;
+
+service PaymentService {
+    rpc GetPaymentDetails (PaymentRequest) returns (PaymentResponse);
+    rpc GetAllPayments(Empty) returns (PaymentListResponse);
+}
+
+message PaymentRequest {
+    string user = 1;
+}
+
+message PaymentResponse {
+    string user = 1;
+    int64 amount = 2;
+    string payment_date = 3;
+    
+}
+
+message PaymentListResponse {
+    repeated PaymentResponse payments = 1;
+}
+
+message Empty {}

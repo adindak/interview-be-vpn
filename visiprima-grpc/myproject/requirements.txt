@@ -1,0 +1,10 @@
+asgiref==3.7.2
+bcrypt==4.2.1
+Django==3.2.25
+grpcio==1.62.3
+grpcio-tools==1.62.3
+protobuf==4.24.4
+PyJWT==2.8.0
+pytz==2024.2
+sqlparse==0.4.4
+typing_extensions==4.7.1
